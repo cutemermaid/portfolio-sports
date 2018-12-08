@@ -1,0 +1,40 @@
+@import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+    background: red;
+    font-family: 'Lato', sans-serif;
+}
+.jumbotron{
+    height: 665px;
+    background-color: #F4F6F9;
+    padding-left: 163px;
+    padding-top: 63px;
+    background-image: url("../images/jumbotron.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    .footexp{
+        width: 546px;
+        height: 96px;
+        padding-top: 133px;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+    }
+
+    .achieve{
+        padding-top: 30px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+
+    .wrapper-applinks{
+        margin-top: 50px;
+        border-radius: 7.33503px;
+    }
+    
+        a:last-child{
+        margin-left: 35.9px;
+        }
+}
