@@ -1,0 +1,87 @@
+@import "./mixins";
+
+.jumbotron{
+    height: 665px;
+    background-color: #F4F6F9;
+    padding-left: 163px;
+    padding-top: 63px;
+    background-image: url("../images/jumbotron.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @include mobile {
+        background-image: none;
+        padding-left: 0px;
+        padding-top: 34px;
+        padding-bottom: 59px;
+        height: 525px;
+    }
+
+    .logo {
+        display: block;
+       
+        @include mobile {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        img {
+            width: 94px;
+        }
+    }
+
+    .footexp{
+        margin-top: 133px;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        color: #333333;
+        @include mobile {
+            line-height: 40px;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-top: 86px; 
+            padding: 0 20px;
+        }
+    }
+
+    .achieve{
+        margin-top: 30px;
+        line-height: 26px;
+        font-size: 18px;
+        color: #4F4F4F;
+        @include mobile {
+            line-height: 23px;
+            font-size: 16px;
+            text-align: center;
+            padding: 0 20px;
+        }
+    }
+
+    .wrapper-applinks{
+        margin-top: 50px;
+        
+        @include mobile {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        a {
+            &:last-child{
+                margin-left: 35px;
+                @include mobile {
+                    margin-left: 28px;
+                }
+            }
+
+            img {
+                width: 156px;
+                @include mobile {
+                    width: 145px;
+                }
+            }
+        }
+    }
+}
