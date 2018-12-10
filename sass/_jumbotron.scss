@@ -8,13 +8,14 @@
     background-image: url("../images/jumbotron.svg");
     background-position: top right;
     background-repeat: no-repeat;
+    
 
     @include mobile {
         background-image: none;
         padding-left: 0px;
         padding-top: 34px;
         padding-bottom: 59px;
-        height: 525px;
+        height: auto;
     }
 
     .logo {
