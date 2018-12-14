@@ -1,0 +1,80 @@
+@import "./mixins";
+
+.user-friendly{
+    min-height: 716PX;
+    background: #FFFFFF;
+    background-image: url("../images/user-friendly.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    @include mobile{
+        background-image: none;
+        height:auto;
+    }
+
+    .get-start{
+        padding-top: 217px;
+        margin-left: 162px;
+        margin-bottom: 27px;
+        font-weight: bold;
+        line-height: 21px;
+        font-size: 16px;
+        color: #00ADEE;
+        
+        @include mobile{
+            padding-top: 62px;
+            margin-left:auto;
+            text-align: center;
+        }
+    }
+    .friendly-interface{
+        margin-left: 162px;
+        margin-bottom: 27px;
+        font-weight: bold;
+        line-height: 37px;
+        font-size: 28px;
+        color: #333333;
+    
+        @include mobile{
+            text-align: center;
+            margin-left: auto;
+        }
+    }
+    .game-goal{
+        margin-left: 162px;
+        margin-bottom: 54px;
+        font-weight: normal;
+        line-height: 23px;
+        font-size: 16px;
+        color: #4F4F4F;
+    
+        @include mobile{
+            margin-left: auto;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+    }
+    .learn-more{
+        margin-left: 162px;
+        margin-bottom: 171px;
+        font-weight: bold;
+        line-height: 21px;
+        font-size: 16px;
+        color: #00ADEE;
+    
+        @include mobile{
+            margin-left: auto;
+            margin-bottom:auto;
+            text-align: center;
+        }
+    }
+
+    img{
+        display: none;
+        
+        @include mobile{
+            display: block;
+        }
+    }
+
+}

@@ -1,0 +1,92 @@
+@import "./mixins";
+
+.features{
+    display: flex;
+    flex-direction: column;
+    padding: 76px 163px 66px 163px;
+    min-height: 735px;
+    background-color: #00ADEE;
+    background-image: url("../images/blue-bg.svg");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    @include mobile{
+        background:#FAFAFA;
+        align-items: center;
+        height: auto;
+        background-image: none;
+        padding: 0px;
+    }
+}
+
+.ftailor{
+    font-weight: bold;
+    line-height: 37px;
+    font-size: 28px;
+    color: #FFFFFF;
+    margin-bottom: 58px;
+    text-align: center;
+
+    @include mobile{
+        padding-left: 21px;
+        padding-right: 21px;
+        text-align: center;
+        margin-top: 42px;
+        margin-bottom: 57px;
+        color: #333333;
+    }
+}
+.part{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    .part-inner{
+        padding-top: 13px;
+        color: #FFFFFF;
+        height: 130px;
+        width: 311px;
+
+        @include mobile{
+            text-align: center;
+            padding: 0 10px 54px 10px;
+            width: 100%;
+            height: auto;
+            color: #4F4F4F;
+        }
+
+        div {
+            margin-top: 13px;
+            @include mobile{
+                margin-top: 16px;
+            }
+        }
+        div::before{
+            content: "• ";
+
+            @include mobile{
+                content: "";
+            }
+        }
+        .svg-desktop{
+            display: block;
+            height: 38px;
+            
+            @include mobile{
+                display: none;
+            }
+        }
+        .svg-mob{
+            display: none;
+            height: 36px;
+
+            @include mobile{
+                display: block;
+                margin:auto;
+            }
+        }
+    }
+    
+}

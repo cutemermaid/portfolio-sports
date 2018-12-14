@@ -1,14 +1,14 @@
 @import "./mixins";
 
 .jumbotron{
-    height: 665px;
+    min-height: 665px;
     background-color: #F4F6F9;
     padding-left: 163px;
     padding-top: 63px;
     background-image: url("../images/jumbotron.svg");
     background-position: top right;
     background-repeat: no-repeat;
-    
+    box-sizing: border-box;
 
     @include mobile {
         background-image: none;
@@ -54,6 +54,7 @@
         font-size: 18px;
         color: #4F4F4F;
         @include mobile {
+            margin-top: 20px;
             line-height: 23px;
             font-size: 16px;
             text-align: center;

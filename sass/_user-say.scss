@@ -1,0 +1,109 @@
+@import "./mixins";
+
+.what-usersay{
+    min-height: 431px;
+    background: #FFFFFF;
+    padding-top: 62px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @include mobile{
+        height: auto;
+        padding:50px 25px 71px 26px;
+
+    }
+
+    .what-ourusersay{
+        margin-bottom: 63px;
+        line-height: 37px;
+        font-weight: bold;
+        font-size: 28px;
+        text-align: center;
+        color:#333333;
+
+        @include mobile{
+            margin-bottom: 39px;
+        }
+    }
+    
+    .cards{
+        flex: 1;
+        position: relative;
+
+        .prev {
+            position: absolute;
+            top: 57px;
+            left: 102px;
+            z-index: 9999;
+
+            @include mobile{
+                left: -23px;
+            }
+        }
+
+        .next {
+            position: absolute;
+            top: 57px;
+            right: 102px;
+            z-index: 9999;
+
+            @include mobile{
+                right: -25px;
+            }
+
+        }
+
+        .card-strip {
+            display: flex;
+            height: 100%;
+            transform: translate(-172px,0px);
+
+            @include mobile{
+                transform: translate(9px,0px);
+            }
+
+            .card {
+                flex: 0 0 309px;
+                padding: 15px 13px 24px 17px;
+                margin-right: 36px;
+                background: pink;
+                display: flex;
+                flex-direction: column;
+                background: #FFFFFF;
+                border: 1px solid #828282;
+                box-sizing: border-box;
+                border-radius: 4px;
+
+                .card-header {
+                    display: flex;
+
+                    .card-name{
+                        flex:1;
+                        padding-left:11px;
+                        padding-top:5px;
+                        font-weight: bold;
+                        line-height: normal;
+                        font-size: 16px;
+                        color: #333333;
+                    }
+                }
+
+                .card-body{
+                    flex:1;
+                    font-weight: normal;
+                    line-height: 18px;
+                    font-size: 14px;
+                    color: #4F4F4F;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+
+    .dots{
+        padding-top: 39px;
+        text-align: center;
+    }
+}
