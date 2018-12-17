@@ -1,0 +1,120 @@
+@import "./mixins";
+
+.footer{
+    min-height: 127px;
+    background: #00ADEE;
+    display: flex;
+    clear: both;
+
+    @include mobile{
+        min-height: 210px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+            
+    .footerball{
+        padding-left: 163px;
+        display: flex;
+        box-sizing: border-box;
+
+        @include mobile{
+            padding-left:21px;
+            display: flex;
+            padding-top: 43px;
+        }
+     }
+
+    .fwrapper{
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;        
+
+        @include mobile{
+            order: 3;
+            padding-left:21px;
+            
+        }
+
+        div {
+            padding-right: 37px;
+            font-weight: bold;
+            line-height: 21px;
+            font-size: 16px;
+            color: #FFFFFF;
+    
+
+            @include mobile{
+                padding-right: 19px;
+                font-size: 15px;
+            }
+        }
+
+        // .fdownload{
+        //     font-weight: bold;
+        //     line-height: 21px;
+        //     font-size: 16px;
+        //     color: #FFFFFF;
+        //     padding-right: 37px;
+
+        //      @include mobile{
+        //     padding-right: 19px;
+            
+        //      }
+        // }
+
+        // .fsupport{
+        //     font-weight: bold;
+        //     line-height: 21px;
+        //     font-size: 16px;
+        //     color: #FFFFFF;
+        //     padding-right: 37px;
+
+        //     @include mobile{
+        //         padding-right: 19px;
+        //     }
+    
+        // }
+
+        // .fdeveloper{
+        //     font-weight: bold;
+        //     line-height: 21px;
+        //     font-size: 16px;
+        //     color: #FFFFFF;
+        //     padding-right: 37px;
+
+        //     @include mobile{
+        //         padding-right: 19px;
+        //     }
+    
+        // }
+
+        // .fprivacy{
+        //     font-weight: bold;
+        //     line-height: 21px;
+        //     font-size: 16px;
+        //     color: #FFFFFF;
+        // }
+    }
+
+    .social{
+        display: flex;
+        align-items: center;
+        padding-right: 145px;
+
+        @include mobile{
+            align-items: flex-start;
+            padding-left: 21px;
+            padding-top: 11px;
+        }
+
+        img{
+            padding-right: 17px;
+            
+        }
+    }
+    
+
+      
+}

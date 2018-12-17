@@ -1,0 +1,81 @@
+@import "./mixins";
+
+.getup{
+    min-height: 483px;
+    background-image: url("../images/footer-desktop.svg");
+    background-repeat: no-repeat;
+
+    @include mobile{
+        background-image: none;
+        min-width: auto;
+    }
+
+    .close{
+        float: right;
+        width: 554px;
+        margin-top: 105px;
+        margin-right: 143px;
+        padding-left: 76px;
+        box-sizing: border-box;
+        clear: both;
+        @include mobile{
+            float: none;
+            width: auto;
+            margin-top: 0px;
+            padding-top: 19px;
+            margin-right: auto;
+            margin-bottom: auto;
+            text-align: center;
+            padding-left: 0px;
+            box-sizing: border-box;
+        }
+
+        .team{
+            font-weight: bold;
+            line-height: 37px;
+            font-size: 28px;
+            color: #333333;
+            margin-bottom: 35px;
+
+            @include mobile{
+                margin-bottom: 15px;
+            }
+        }
+
+        .scores-section{
+            font-weight: normal;
+            line-height: 25px;
+            font-size: 16px;
+            color: #4F4F4F;
+            margin-bottom: 38px;
+
+            @include mobile{
+                margin-bottom: 37px;
+            }
+        }
+        
+        .links{
+            margin-bottom: 0px;
+            @include mobile{
+                margin-bottom: 64px;
+            }
+            a{
+                &:first-child{
+                    margin-right: 35px;
+
+                    @include mobile{
+                        margin-right: 28px;
+                    }
+                }
+            }
+        }
+        > img{
+            display: none;
+
+            @include mobile{
+                 display: block;
+            }
+        }
+
+    }
+}
