@@ -1,10 +1,12 @@
 @import "./mixins";
+@import "./variable";
 
 .live-broadcast{
     background-image: url("../images/broadcast.svg");
     background-repeat: no-repeat;
     min-height: 592px;
-
+    min-width:$layout-min-width;
+    
     @include mobile{
         background-image: none;
         height: auto;
@@ -71,6 +73,17 @@
                                 margin-bottom: 22px;
 
                             }
+
+                            a{
+                                text-decoration: none;
+                                color: #00ADEE;
+                            }
+
+                            a:hover{
+                                text-decoration: underline;
+                            }
+
+                            
                         }
                             img{
                                 display: none;

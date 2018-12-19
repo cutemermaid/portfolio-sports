@@ -1,4 +1,6 @@
 @import "./mixins";
+@import "./variable";
+
 
 .user-friendly{
     min-height: 716PX;
@@ -6,7 +8,8 @@
     background-image: url("../images/user-friendly.svg");
     background-repeat: no-repeat;
     background-position: top right;
-
+    min-width:$layout-min-width;
+    
     @include mobile{
         background-image: none;
         height:auto;
@@ -67,6 +70,16 @@
             margin-bottom:auto;
             text-align: center;
         }
+
+        a{
+            text-decoration: none;
+            color: #00ADEE;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
     }
 
     img{

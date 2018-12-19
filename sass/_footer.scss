@@ -1,10 +1,12 @@
 @import "./mixins";
+@import "./variable";
 
 .footer{
     min-height: 127px;
     background: #00ADEE;
     display: flex;
     clear: both;
+    min-width:$layout-min-width;
 
     @include mobile{
         min-height: 210px;
@@ -43,7 +45,7 @@
             line-height: 21px;
             font-size: 16px;
             color: #FFFFFF;
-    
+            cursor: pointer;
 
             @include mobile{
                 padding-right: 19px;
@@ -51,51 +53,6 @@
             }
         }
 
-        // .fdownload{
-        //     font-weight: bold;
-        //     line-height: 21px;
-        //     font-size: 16px;
-        //     color: #FFFFFF;
-        //     padding-right: 37px;
-
-        //      @include mobile{
-        //     padding-right: 19px;
-            
-        //      }
-        // }
-
-        // .fsupport{
-        //     font-weight: bold;
-        //     line-height: 21px;
-        //     font-size: 16px;
-        //     color: #FFFFFF;
-        //     padding-right: 37px;
-
-        //     @include mobile{
-        //         padding-right: 19px;
-        //     }
-    
-        // }
-
-        // .fdeveloper{
-        //     font-weight: bold;
-        //     line-height: 21px;
-        //     font-size: 16px;
-        //     color: #FFFFFF;
-        //     padding-right: 37px;
-
-        //     @include mobile{
-        //         padding-right: 19px;
-        //     }
-    
-        // }
-
-        // .fprivacy{
-        //     font-weight: bold;
-        //     line-height: 21px;
-        //     font-size: 16px;
-        //     color: #FFFFFF;
-        // }
     }
 
     .social{

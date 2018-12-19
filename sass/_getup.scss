@@ -1,10 +1,11 @@
 @import "./mixins";
+@import"./variable";
 
 .getup{
     min-height: 483px;
     background-image: url("../images/footer-desktop.svg");
     background-repeat: no-repeat;
-
+    min-width:$layout-min-width;
     @include mobile{
         background-image: none;
         min-width: auto;

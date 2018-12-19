@@ -1,11 +1,13 @@
 @import "./mixins";
+@import "./variable";
 
 .press{
     min-height: 278px;
     background: #FAFAFA;
     padding: 57px 0px 64px 0px;
     box-sizing: border-box;
-
+    min-width:$layout-min-width;
+    
     @include mobile{
         min-height: 409px;
         padding-bottom: 72px;

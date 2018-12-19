@@ -1,5 +1,5 @@
 @import "./mixins";
-
+@import "./variable";
 .features{
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     background-image: url("../images/blue-bg.svg");
     background-repeat: no-repeat;
     box-sizing: border-box;
+    min-width:$layout-min-width;
 
     @include mobile{
         background:#FAFAFA;
