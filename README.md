@@ -1,4 +1,4 @@
-# Sports Websit (Desktop and Mobile view)
+# Sports Website (Desktop and Mobile view)
 
 I have made the landing page of Sports Website which is a free Figma template available on the internet.
 
