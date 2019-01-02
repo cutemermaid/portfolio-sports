@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 
 .jumbotron{
     min-height: 665px;
@@ -17,6 +17,7 @@
         padding-top: 34px;
         padding-bottom: 59px;
         height: auto;
+        min-width: 100%;
     }
 
     .logo {

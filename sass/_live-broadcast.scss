@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 
 .live-broadcast{
     background-image: url("../images/broadcast.svg");
@@ -10,6 +10,7 @@
     @include mobile{
         background-image: none;
         height: auto;
+        min-width: 100%;
     }
         .football-experience{
             float: right;

@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 
 
 .user-friendly{
@@ -13,6 +13,7 @@
     @include mobile{
         background-image: none;
         height:auto;
+        min-width: 100%;
     }
 
     .get-start{

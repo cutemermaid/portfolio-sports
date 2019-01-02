@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 
 .what-usersay{
     min-height: 431px;
@@ -13,6 +13,7 @@
     
     @include mobile{
         height: auto;
+        min-width: 100%;
         padding:50px 25px 71px 26px;
 
     }

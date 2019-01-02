@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 
 .press{
     min-height: 278px;
@@ -10,6 +10,7 @@
     
     @include mobile{
         min-height: 409px;
+        min-width: 100%;
         padding-bottom: 72px;
     }
 

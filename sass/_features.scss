@@ -1,5 +1,5 @@
 @import "./mixins";
-@import "./variable";
+@import "./variables";
 .features{
     display: flex;
     flex-direction: column;
@@ -15,6 +15,7 @@
         background:#FAFAFA;
         align-items: center;
         height: auto;
+        min-width: 100%;
         background-image: none;
         padding: 0px;
     }
